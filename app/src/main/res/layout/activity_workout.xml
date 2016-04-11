@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.heimbeeren.homecycling.WorkoutActivity"
+    android:background="@drawable/sophie_1">
+
+    <VideoView
+        android:id="@+id/video_playback"
+        android:background="@drawable/sophie_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/message_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:shadowColor="#283593"
+            android:shadowDy="4"
+            android:shadowDx="4"
+            android:shadowRadius="3"
+            android:textColor="#c0ca33"
+            android:text="Beispieltext"/>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/debug_seeker"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:max="180"/>
+
+    <RelativeLayout
+        android:id="@+id/heartrate_area"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_gravity="top|left">
+
+        <TextView
+            android:id="@+id/txv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:shadowColor="#283593"
+            android:shadowDy="4"
+            android:shadowDx="4"
+            android:shadowRadius="3"
+            android:textColor="#c0ca33"
+            />
+
+        <TextView
+            android:id="@+id/txv_heartrate_pct"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:shadowColor="#283593"
+            android:shadowDy="4"
+            android:shadowDx="4"
+            android:shadowRadius="3"
+            android:textColor="#c0ca33"
+            android:textSize="19sp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold|italic"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textview_heartrate"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:shadowColor="#283593"
+            android:shadowDy="4"
+            android:shadowDx="4"
+            android:shadowRadius="3"
+            android:textColor="#c0ca33"
+            android:textSize="32sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold|italic"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/txv_hr_stage1"
+            android:layout_width="25dp"
+            android:layout_height="10dp"
+            android:background="@drawable/textview_transition_stage1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/txv_hr_stage2"
+            android:layout_width="25dp"
+            android:layout_height="10dp"
+            android:background="@drawable/textview_transition_stage2"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/txv_hr_stage1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/txv_hr_stage3"
+            android:layout_width="25dp"
+            android:layout_height="10dp"
+            android:background="@drawable/textview_transition_stage3"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/txv_hr_stage2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/txv_hr_stage4"
+            android:layout_width="25dp"
+            android:layout_height="10dp"
+            android:background="@drawable/textview_transition_stage4"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/txv_hr_stage3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/txv_hr_stage5"
+            android:layout_width="25dp"
+            android:layout_height="10dp"
+            android:background="@drawable/textview_transition_stage5"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/txv_hr_stage4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_gravity="top|right">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_gravity="top|center_horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom|left">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom|right">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom|center_horizontal">
+    </LinearLayout>
+
+
+</FrameLayout>
